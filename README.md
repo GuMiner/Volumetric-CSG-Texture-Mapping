@@ -41,9 +41,12 @@ Don't forget to check the console for useful information!
 TODO List
 ---------
 
+0. There's still noticable triangle outlines on the texture map that should be cleaned up.
 1. The texture-mapping algorithm I have leaves a lot of empty space in-between triangles. Reducing this would increase the quality of the texture applied to each triangle.
 2. Parts of the texture-mapping algorithm could be implemented in a separate GPU pass, speeding up the process.
 3. A clearer UI would be nice.
+4. Error checking on failed calls to new -- which can happen (very rarely).
+5. The triangles resulting from [Surface-Netgen-Fork](https://github.com/GuMiner/Surface-Netgen-Fork) do not have consistent windings. Either fix the generator, or rewind the triangles to allow for back-face culling.
 
 Credits and Contact information
 -------------------
