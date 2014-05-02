@@ -1,0 +1,5 @@
+# Geometry example for netgen
+algebraic3d
+solid cube = orthobrick(0, 0, 0; 1, 1, 1) and not cylinder(0.5, 0.5, -1.1; 0.5, 0.5, .1; 0.2);
+solid cuber = cube and not cylinder(0.5, -1.1, 0.5; 0.5, 1.1, 0.5; 0.44);
+tlo cuber;
