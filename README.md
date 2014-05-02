@@ -37,6 +37,7 @@ Key List
 * Escape: Quit
 
 Don't forget to check the console for useful information!
+Also note that the executable requires the Visual Studio 2012 redistributable (x32), available from [here](http://www.microsoft.com/en-us/download/details.aspx?id=30679).
 
 TODO List
 ---------
