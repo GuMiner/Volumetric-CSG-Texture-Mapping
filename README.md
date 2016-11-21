@@ -1,10 +1,14 @@
 Volumetric-CSG-Texture-Mapping
 ==============================
 
-Short Description
+Synopsis
 -----------------
 
-An OpenGL 4.0 demonstration application using [Surface-Netgen-Fork](https://github.com/GuMiner/Surface-Netgen-Fork) for real-time CSG operations with volumetric texture mapping. Unlike a standard mesh, volumetric CSG texture msshing allows for the *holes* of an object to be moved, revealing hidden features
+This application is OpenGL 4.0 demonstration of [Surface-Netgen-Fork](https://github.com/GuMiner/Surface-Netgen-Fork) used for real-time CSG operations with volumetric texture mapping. Unlike a standard mesh, volumetric CSG texture msshing allows for the *holes* of an object to be moved, revealing hidden features
+
+Status
+------
+This demonstration application has been completed. I have listed potential improvements at the bottom of this README file, but have no intention of performing said improvements at any time in the near future.
 
 Overview of the Problem
 -----------------------
@@ -39,18 +43,16 @@ Key List
 Don't forget to check the console for useful information!
 Also note that the executable requires the Visual Studio 2012 redistributable (x32), available from [here](http://www.microsoft.com/en-us/download/details.aspx?id=30679).
 
-TODO List
+Future work
 ---------
 
-0. There's still noticable triangle outlines on the texture map that should be cleaned up.
+0. There are noticable triangle outlines on the texture map that should be cleaned up.
 1. The texture-mapping algorithm I have leaves a lot of empty space in-between triangles. Reducing this would increase the quality of the texture applied to each triangle.
 2. Parts of the texture-mapping algorithm could be implemented in a separate GPU pass, speeding up the process.
-3. A clearer UI would be nice.
+3. The UI can be improved and made more user-friendly.
 4. Error checking on failed calls to new -- which can happen (very rarely).
 5. The triangles resulting from [Surface-Netgen-Fork](https://github.com/GuMiner/Surface-Netgen-Fork) do not have consistent windings. Either fix the generator, or rewind the triangles to allow for back-face culling.
 
-Credits and Contact information
+Dependencies
 -------------------
 This program uses [GLEW](http://glew.sourceforge.net/) which is under the modified BSD & MIT license, [Surface-Netgen-Fork](https://github.com/GuMiner/Surface-Netgen-Fork) which is under the LGPL 2 license, and [GLFW 3](http://www.glfw.org/index.html) which is under the zlib/png license.
-
-Gustave Granroth gus.gran@gmail.com
